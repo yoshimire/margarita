@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Proyecto de indagación científica: Efectos del agua azucarada en la resistencia al frío de plantas de margarita. IE N° 51006 Túpac Amaru, Cusco 2026."/>
+  <meta name="keywords" content="ciencia, margarita, agua azucarada, resistencia al frío, Cusco, indagación científica"/>
+  <title>Panel Científico – Agua Azucarada & Margarita | IE 51006</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"/>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+      <span style="font-size:1.3rem">🌼</span> Panel Científico</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <i class="bi bi-list fs-4" style="color:#2d6a4f"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-1 pb-2 pb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#inicio"><i class="bi bi-house-door me-1"></i>Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#introduccion"><i class="bi bi-book me-1"></i>Introducción</a></li>
+        <li class="nav-item"><a class="nav-link" href="#objetivos"><i class="bi bi-bullseye me-1"></i>Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#metodologia"><i class="bi bi-gear me-1"></i>Metodología</a></li>
+        <li class="nav-item"><a class="nav-link" href="#desarrollo"><i class="bi bi-journal-text me-1"></i>Desarrollo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dashboard"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#graficos"><i class="bi bi-bar-chart-line me-1"></i>Gráficos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resultados"><i class="bi bi-trophy me-1"></i>Resultados</a></li>
+        <li class="nav-item"><a class="nav-link" href="#referencias"><i class="bi bi-journal-bookmark me-1"></i>Referencias</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════
+     HERO – PORTADA
+════════════════════════════════════════════════ -->
+<section id="inicio">
+  <div class="hero-content container px-4">
+    <div class="hero-badge">Proyecto de Indagación Científica · 2026</div>
+    <span class="hero-flower" role="img" aria-label="flor">
+      <img src="img/logo_cmt.png" class="img-fluid d-block mx-auto" alt="Logo CMT" style="max-width: 150px;">
+    </span>
+    <h1 class="hero-title">Efecto del Agua Azucarada en la Resistencia al Frío de la Margarita</h1>
+    <p class="hero-subtitle">Investigación experimental de 6 semanas sobre crioprotección natural en plantas ornamentales, Cusco – Perú</p>
+
+    <div class="hero-names mx-auto" style="max-width:420px">
+      <p class="label">Investigadoras</p>
+      <p><i class="bi bi-person-fill me-1"></i><strong>Yoshimi Roxanne Elionof Mamani Bonifacio</strong></p>
+      <p><i class="bi bi-person-fill me-1"></i><strong>Claudia Alejandra Limpi Usca</strong></p>
+      <hr style="border-color:rgba(255,255,255,0.2);margin:0.5rem 0"/>
+      <p class="label mt-1">Emblemática Gran Unidad Escolar</p>
+      <p>"Clorinda Matto de Turner"" · 2do "J" · Cusco, 2026</p>
+    </div>
+
+    <a href="#introduccion" class="btn-ver-proyecto">
+      <i class="bi bi-arrow-down-circle me-2"></i>Ver Proyecto
+    </a>
+  </div>
+  <div class="hero-scroll">
+    <i class="bi bi-chevron-down d-block mb-1"></i>
+    Desplaza para explorar
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     CARRUSEL
+════════════════════════════════════════════════ -->
+<section id="carrusel" style="padding:3rem 0; background:#f0faf4">
+  <div class="container">
+    <div class="text-center mb-3">
+      <h2 class="section-title">Galería del Experimento</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div id="carruselExperimento" class="carousel slide carousel-custom" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselExperimento" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carruselExperimento" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carruselExperimento" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carruselExperimento" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#carruselExperimento" data-bs-slide-to="4"></button>
+      </div>
+      <div class="carousel-inner rounded-4 overflow-hidden">
+        <div class="carousel-item active">
+          <div class="carousel-emoji-slide">
+            <div class="emoji">🌱</div>
+            <h5>Inicio del Experimento</h5>
+            <p>Dos plantas de margarita de 20 cm seleccionadas. Maceta blanca = Control · Maceta café = Experimental</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-emoji-slide" style="background:linear-gradient(135deg,#1d3557,#457b9d)">
+            <div class="emoji">🧪</div>
+            <h5>Preparación del Riego</h5>
+            <p>Solución experimental: 5 g de azúcar disueltos en 1 litro de agua potable. Riego: ½ vaso, 2 veces por semana.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-emoji-slide" style="background:linear-gradient(135deg,#40916c,#1b4332)">
+            <div class="emoji">🌼</div>
+            <h5>Semana 3 – Primera Floración</h5>
+            <p>Ambas plantas abrieron su primera flor. La planta control ya mostraba 1 hoja dañada por las bajas temperaturas.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-emoji-slide" style="background:linear-gradient(135deg,#b5450b,#e76f51)">
+            <div class="emoji">🌡️</div>
+            <h5>Efecto de las Heladas Nocturnas</h5>
+            <p>Las bajas temperaturas de Cusco afectaron la planta control. La planta experimental resistió sin hojas dañadas.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-emoji-slide" style="background:linear-gradient(135deg,#023e8a,#0077b6)">
+            <div class="emoji">📊</div>
+            <h5>Resultados Finales – Semana 6</h5>
+            <p>Control: 28 cm · 4 hojas dañadas · 4 botones. Experimental: 26 cm · 0 hojas dañadas · 2 botones.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselExperimento" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselExperimento" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     INTRODUCCIÓN
+════════════════════════════════════════════════ -->
+<section id="introduccion">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-book-half me-2"></i>Introducción</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle">Contexto científico del experimento</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-4 fade-in-up">
+        <div class="card-info">
+          <div class="card-icon icon-verde"><i class="bi bi-thermometer-snow"></i></div>
+          <h5>Las Bajas Temperaturas en Cusco</h5>
+          <p>Las heladas representan un factor limitante para las especies vegetales de la región. Alteran procesos fisiológicos esenciales como la fotosíntesis y el transporte de agua.</p>
+          <a href="#metodologia" class="btn-ver-mas">Ver Metodología</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 fade-in-up">
+        <div class="card-info">
+          <div class="card-icon icon-amarillo"><i class="bi bi-droplet-fill"></i></div>
+          <h5>Carbohidratos como Protectores</h5>
+          <p>Los azúcares cumplen funciones energéticas y participan en la protección celular frente al estrés ambiental. Intervienen en la estabilización de membranas celulares y la regulación osmótica.</p>
+          <a href="#desarrollo" class="btn-ver-mas">Ver Desarrollo</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 fade-in-up">
+        <div class="card-info">
+          <div class="card-icon icon-azul"><i class="bi bi-flower2"></i></div>
+          <h5>La Margarita como Modelo</h5>
+          <p>La planta de margarita fue elegida por su sensibilidad al frío y su amplia presencia en la región andina. Su facilidad de cultivo la hace ideal para experimentos escolares controlados.</p>
+          <a href="#resultados" class="btn-ver-mas">Ver Resultados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     OBJETIVOS & PROBLEMATIZACIÓN
+════════════════════════════════════════════════ -->
+<section id="objetivos">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-bullseye me-2"></i>Objetivos e Hipótesis</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <!-- Pregunta -->
+      <div class="col-12 col-md-6 fade-in-up">
+        <div class="card-info h-100" style="border-left:4px solid #2d6a4f">
+          <div class="card-icon icon-verde"><i class="bi bi-question-circle-fill"></i></div>
+          <h5>Pregunta de Indagación</h5>
+          <p class="fst-italic">"¿Cuál es el efecto del agua azucarada en la resistencia al frío de las plantas de margarita?"</p>
+        </div>
+      </div>
+      <!-- Hipótesis -->
+      <div class="col-12 col-md-6 fade-in-up">
+        <div class="card-info h-100" style="border-left:4px solid #ffd60a">
+          <div class="card-icon icon-amarillo"><i class="bi bi-lightbulb-fill"></i></div>
+          <h5>Hipótesis</h5>
+          <p>"La planta de margarita regada con agua azucarada presentará <strong>menor daño</strong> ocasionado por las bajas temperaturas que la planta regada únicamente con agua potable."</p>
+        </div>
+      </div>
+      <!-- Objetivo -->
+      <div class="col-12 fade-in-up">
+        <div class="card-info" style="border-left:4px solid #4895ef">
+          <div class="card-icon icon-azul"><i class="bi bi-trophy-fill"></i></div>
+          <h5>Objetivo General</h5>
+          <p>Determinar el efecto del agua azucarada en la resistencia al frío de las plantas de margarita, contribuyendo al conocimiento sobre la respuesta de los seres vivos frente a condiciones ambientales adversas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Variables -->
+    <div class="mt-5">
+      <h4 class="fw-bold text-center mb-4" style="color:#2d6a4f"><i class="bi bi-diagram-3 me-2"></i>Variables del Experimento</h4>
+      <div class="row g-3">
+        <div class="col-12 col-md-4 fade-in-up">
+          <div class="rounded-4 p-3 text-center text-white" style="background:#2b5797">
+            <i class="bi bi-arrow-right-circle-fill fs-2 mb-2"></i>
+            <h6 class="fw-bold">Variable Independiente</h6>
+            <p class="mb-0 small">Tipo de riego:<br>✔ Agua potable (control)<br>✔ Agua azucarada 5 g/L (experimental)</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 fade-in-up">
+          <div class="rounded-4 p-3 text-center text-white" style="background:#2d6a4f">
+            <i class="bi bi-bar-chart-fill fs-2 mb-2"></i>
+            <h6 class="fw-bold">Variable Dependiente</h6>
+            <p class="mb-0 small">Resistencia al frío evaluada:<br>✔ Hojas dañadas<br>✔ Estado de flores<br>✔ Crecimiento de la planta</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 fade-in-up">
+          <div class="rounded-4 p-3 text-center" style="background:#fff3b0;color:#6b4f00">
+            <i class="bi bi-sliders fs-2 mb-2"></i>
+            <h6 class="fw-bold">Variables Intervinientes</h6>
+            <p class="mb-0 small">Tipo de suelo · Tamaño de maceta · Cantidad de agua · Exposición solar · Temperatura ambiental</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     METODOLOGÍA – TABLAS EN ACORDEÓN
+════════════════════════════════════════════════ -->
+<section id="metodologia">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-gear-wide-connected me-2"></i>Metodología y Diseño</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle">Procedimientos controlados para una investigación confiable</p>
+    </div>
+
+    <div class="accordion" id="acordeonMetodologia">
+
+      <!-- Tabla 1: Procedimientos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#proc1">
+            <i class="bi bi-table me-2"></i>Tabla 1 – Procedimientos del Experimento
+          </button>
+        </h2>
+        <div id="proc1" class="accordion-collapse collapse show" data-bs-parent="#acordeonMetodologia">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table table-custom table-bordered table-hover align-middle">
+                <thead>
+                  <tr>
+                    <th>Manipular Variable Independiente</th>
+                    <th>Observar Variable Dependiente</th>
+                    <th>Controlar Variable Interviniente</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Se seleccionaron dos plantas de margarita de ~20 cm con características similares.</td>
+                    <td>Observaciones semanales durante 6 semanas.</td>
+                    <td>Ambas plantas en macetas del mismo tamaño con igual tipo de suelo.</td>
+                  </tr>
+                  <tr>
+                    <td>Grupo control: agua potable. Grupo experimental: agua azucarada (5 g/L).</td>
+                    <td>Se midió la altura con regla graduada cada semana.</td>
+                    <td>Igual cantidad de agua (½ vaso, 2 veces por semana).</td>
+                  </tr>
+                  <tr>
+                    <td>Riego: ½ vaso, 2 veces/semana, por 6 semanas consecutivas.</td>
+                    <td>Se registró N° de flores y hojas dañadas por frío.</td>
+                    <td>Mismo lugar: igual exposición a luz solar y temperatura.</td>
+                  </tr>
+                  <tr>
+                    <td>Ambas expuestas a condiciones ambientales naturales de Cusco.</td>
+                    <td>Se tomaron fotografías semanales como evidencia.</td>
+                    <td>Mediciones realizadas el mismo día y hora cada semana.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabla 2: Materiales -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proc2">
+            <i class="bi bi-box-seam me-2"></i>Tabla 2 – Materiales, Herramientas e Instrumentos
+          </button>
+        </h2>
+        <div id="proc2" class="accordion-collapse collapse" data-bs-parent="#acordeonMetodologia">
+          <div class="accordion-body">
+            <div class="table-responsive">
+              <table class="table table-custom table-bordered table-hover">
+                <thead>
+                  <tr><th><i class="bi bi-archive me-1"></i>Materiales</th><th><i class="bi bi-tools me-1"></i>Herramientas</th><th><i class="bi bi-rulers me-1"></i>Instrumentos</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>✔ Dos plantas de margarita</td><td>✔ Cuchara para medir azúcar</td><td>✔ Regla graduada</td></tr>
+                  <tr><td>✔ Dos macetas (blanca y café)</td><td>✔ Recipiente para la solución</td><td>✔ Cuaderno de campo</td></tr>
+                  <tr><td>✔ Tierra agrícola</td><td>✔ Vaso medidor</td><td>✔ Celular (registro fotográfico)</td></tr>
+                  <tr><td>✔ Agua potable</td><td>✔ Cucharita para riego</td><td></td></tr>
+                  <tr><td>✔ Azúcar (5 g/L)</td><td></td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="alert alert-success mt-3 py-2 small" role="alert">
+              <i class="bi bi-clock me-1"></i><strong>Duración total del experimento:</strong> 6 semanas (9 de mayo al 13 de junio de 2026)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seguridad -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proc3">
+            <i class="bi bi-shield-check me-2"></i>Medidas de Seguridad
+          </button>
+        </h2>
+        <div id="proc3" class="accordion-collapse collapse" data-bs-parent="#acordeonMetodologia">
+          <div class="accordion-body">
+            <div class="row g-3">
+              <div class="col-12 col-md-4">
+                <div class="card-info" style="padding:1rem">
+                  <div class="card-icon icon-verde" style="width:40px;height:40px;font-size:1.2rem"><i class="bi bi-hand-thumbs-up"></i></div>
+                  <h6 class="fw-bold mt-1" style="font-size:0.85rem">Manipulación adecuada</h6>
+                  <p class="mb-0" style="font-size:0.8rem">Se evitó maltratar hojas, flores y raíces durante observaciones y riego.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card-info" style="padding:1rem">
+                  <div class="card-icon icon-amarillo" style="width:40px;height:40px;font-size:1.2rem"><i class="bi bi-droplet"></i></div>
+                  <h6 class="fw-bold mt-1" style="font-size:0.85rem">Uso adecuado de materiales</h6>
+                  <p class="mb-0" style="font-size:0.8rem">Recipientes limpios para la solución. Se evitó derramar agua alrededor de las macetas.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card-info" style="padding:1rem">
+                  <div class="card-icon icon-azul" style="width:40px;height:40px;font-size:1.2rem"><i class="bi bi-journal-check"></i></div>
+                  <h6 class="fw-bold mt-1" style="font-size:0.85rem">Registro preciso</h6>
+                  <p class="mb-0" style="font-size:0.8rem">Mediciones realizadas con precisión. Verificación semanal para evitar errores de transcripción.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /accordion -->
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     DESARROLLO – ANÁLISIS Y EVALUACIÓN
+════════════════════════════════════════════════ -->
+<section id="desarrollo">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-journal-text me-2"></i>Desarrollo del Proyecto</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 fade-in-up">
+        <div class="card-info h-100">
+          <div class="card-icon icon-verde"><i class="bi bi-graph-up-arrow"></i></div>
+          <h5>Análisis de Datos</h5>
+          <p>Durante las seis semanas, ambas plantas crecieron y desarrollaron flores. La planta control alcanzó <strong>28 cm</strong> con 1 flor y 3 botones, mientras que la experimental llegó a <strong>26 cm</strong> con 1 flor y 1 botón floral.</p>
+          <p>La diferencia clave: la planta control presentó <strong>4 hojas secas</strong> por el frío; la experimental <strong>ninguna</strong>.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 fade-in-up">
+        <div class="card-info h-100">
+          <div class="card-icon icon-amarillo"><i class="bi bi-clipboard2-data"></i></div>
+          <h5>Evaluación del Experimento</h5>
+          <p>El diseño experimental permitió controlar las variables intervinientes, modificando únicamente el tipo de riego. Las mediciones respondieron la pregunta de investigación y cumplieron el objetivo planteado.</p>
+          <p>Limitación importante: solo se usaron dos plantas, por lo que los resultados son <strong>preliminares</strong> y no generalizables.</p>
+        </div>
+      </div>
+      <div class="col-12 fade-in-up">
+        <div class="card-info" style="border-left:4px solid #52b788; background:#f0faf4">
+          <div class="d-flex align-items-start gap-3">
+            <div class="card-icon icon-verde flex-shrink-0"><i class="bi bi-patch-check-fill"></i></div>
+            <div>
+              <h5>Conclusión sobre la Hipótesis</h5>
+              <p class="mb-0">La hipótesis se <strong>acepta parcialmente</strong>: el agua azucarada no favoreció el crecimiento ni la floración en comparación al control, pero sí se relacionó con una <strong>menor afectación por el frío</strong> (0 vs 4 hojas dañadas). Se recomienda ampliar la investigación con mayor número de plantas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     DASHBOARD DE SEGUIMIENTO EXPERIMENTAL
+════════════════════════════════════════════════ -->
+<section id="dashboard">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-speedometer2 me-2"></i>Dashboard de Seguimiento Experimental</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle">Efectos del agua azucarada sobre la margarita · 6 semanas · Cusco 2026</p>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="row g-3 mb-4">
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="kpi-card fade-in-up">
+          <div class="kpi-icon">📅</div>
+          <div class="kpi-value" id="kpi-semana">–</div>
+          <div class="kpi-label">Semana Final</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="kpi-card fade-in-up">
+          <div class="kpi-icon">📏</div>
+          <div class="kpi-value" id="kpi-altura-control">–</div>
+          <div class="kpi-label">Altura Control</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="kpi-card fade-in-up">
+          <div class="kpi-icon">🌿</div>
+          <div class="kpi-value" id="kpi-altura-exp">–</div>
+          <div class="kpi-label">Altura Exp.</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="kpi-card fade-in-up">
+          <div class="kpi-icon">🌸</div>
+          <div class="kpi-value" id="kpi-flores-control">–</div>
+          <div class="kpi-label">Flores Control</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="kpi-card fade-in-up">
+          <div class="kpi-icon">🌼</div>
+          <div class="kpi-value" id="kpi-flores-exp">–</div>
+          <div class="kpi-label">Flores Exp.</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="kpi-card fade-in-up" style="border:1px solid rgba(220,53,69,0.4)">
+          <div class="kpi-icon">🍂</div>
+          <div class="kpi-value" style="color:#ff6b6b" id="kpi-danios">–</div>
+          <div class="kpi-label">Hojas Dañadas</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flor + Timeline -->
+    <div class="row g-4 mt-2">
+      <!-- Flor dinámica -->
+      <div class="col-12 col-lg-4 fade-in-up">
+        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:1.5rem;text-align:center">
+          <h6 class="text-white fw-bold mb-3"><i class="bi bi-flower1 me-2"></i>Estado de la Margarita Experimental</h6>
+          <div class="flower-container">
+            <div id="flor-svg"></div>
+            <span id="estado-badge" class="health-badge text-white bg-success">🌼 Estado: Excelente</span>
+          </div>
+          <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+            <button class="selector-btn active" data-estado="Excelente">Excelente</button>
+            <button class="selector-btn" data-estado="Buena">Buena</button>
+            <button class="selector-btn" data-estado="Regular">Regular</button>
+            <button class="selector-btn" data-estado="Deficiente">Deficiente</button>
+          </div>
+          <p class="small mt-3" style="color:rgba(255,255,255,0.5)">Toca los botones para cambiar el estado visual de la flor</p>
+        </div>
+      </div>
+
+      <!-- Timeline semanal -->
+      <div class="col-12 col-lg-8 fade-in-up">
+        <h6 class="text-white fw-bold mb-3"><i class="bi bi-calendar3 me-2"></i>Seguimiento Semanal</h6>
+        <div id="timeline-container">
+          <!-- Generado por JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     GRÁFICOS
+════════════════════════════════════════════════ -->
+<section id="graficos">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-bar-chart-line me-2"></i>Gráficos Interactivos</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="section-subtitle">Visualización de los datos del experimento</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="chart-card fade-in-up">
+          <h6><i class="bi bi-graph-up me-1"></i>Crecimiento Semanal (cm)</h6>
+          <canvas id="chartLineas" height="220"></canvas>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="chart-card fade-in-up">
+          <h6><i class="bi bi-bar-chart me-1"></i>Hojas Dañadas por Semana</h6>
+          <canvas id="chartBarras" height="220"></canvas>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="chart-card fade-in-up">
+          <h6><i class="bi bi-pie-chart me-1"></i>Estado Final del Experimento</h6>
+          <canvas id="chartCircular" height="240"></canvas>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="chart-card fade-in-up">
+          <h6><i class="bi bi-pentagon me-1"></i>Indicadores Generales (Radar)</h6>
+          <canvas id="chartRadar" height="240"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     RESULTADOS Y CONCLUSIONES
+════════════════════════════════════════════════ -->
+<section id="resultados">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-trophy me-2"></i>Resultados y Conclusiones</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <!-- Indicadores numéricos -->
+    <div class="row g-3 mb-5">
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="resultado-card text-center" style="background:#f0faf4">
+          <div class="resultado-num" style="color:#2d6a4f">0</div>
+          <div class="resultado-desc">Hojas dañadas<br><strong>Planta experimental</strong></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="resultado-card text-center" style="background:#fff5f5">
+          <div class="resultado-num" style="color:#dc3545">4</div>
+          <div class="resultado-desc">Hojas dañadas<br><strong>Planta control</strong></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="resultado-card text-center" style="background:#fff3b0">
+          <div class="resultado-num" style="color:#b5840a">6</div>
+          <div class="resultado-desc">Semanas de<br><strong>experimentación</strong></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="resultado-card text-center" style="background:#e8f0fe">
+          <div class="resultado-num" style="color:#2b5797">2</div>
+          <div class="resultado-desc">Plantas<br><strong>monitoreadas</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hallazgos y conclusiones -->
+    <div class="row g-4">
+      <div class="col-12 col-md-6 fade-in-up">
+        <div class="card-info h-100">
+          <div class="card-icon icon-verde"><i class="bi bi-check-circle-fill"></i></div>
+          <h5>Hallazgos Principales</h5>
+          <ul class="list-unstyled small" style="color:#495057">
+            <li class="mb-2">✅ La planta experimental no presentó hojas dañadas en ninguna de las 6 semanas.</li>
+            <li class="mb-2">✅ La planta control acumuló 4 hojas secas hacia el final del experimento.</li>
+            <li class="mb-2">✅ Ambas plantas continuaron creciendo a pesar de las bajas temperaturas.</li>
+            <li class="mb-2">⚠️ El agua azucarada no mejoró el crecimiento en altura ni la producción de flores.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 fade-in-up">
+        <div class="card-info h-100">
+          <div class="card-icon icon-amarillo"><i class="bi bi-star-fill"></i></div>
+          <h5>Conclusiones</h5>
+          <ul class="list-unstyled small" style="color:#495057">
+            <li class="mb-2">🔬 La hipótesis se acepta <strong>parcialmente</strong>.</li>
+            <li class="mb-2">🌿 El agua azucarada (5 g/L) mostró un efecto protector sobre las hojas frente al frío.</li>
+            <li class="mb-2">📏 No se evidenció mejora en crecimiento ni floración en la planta experimental.</li>
+            <li class="mb-2">📋 Los resultados son preliminares por el tamaño reducido de la muestra (n=2).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 fade-in-up">
+        <div class="card-info" style="background:#f0faf4;border-left:4px solid #2d6a4f">
+          <div class="card-icon icon-azul"><i class="bi bi-lightbulb"></i></div>
+          <h5>Recomendaciones</h5>
+          <div class="row g-2">
+            <div class="col-12 col-sm-6">
+              <p class="small mb-1">🔭 <strong>Ampliar muestra:</strong> Repetir el experimento con al menos 5 plantas por grupo para resultados generalizables.</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p class="small mb-1">🧪 <strong>Variar concentración:</strong> Probar diferentes concentraciones de azúcar (2 g/L, 5 g/L, 10 g/L) para identificar la dosis óptima.</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p class="small mb-1">🌡️ <strong>Controlar temperatura:</strong> Registrar la temperatura nocturna exacta para correlacionar con el daño observado.</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <p class="small mb-0">🌱 <strong>Otras especies:</strong> Aplicar el mismo procedimiento en otras plantas ornamentales andinas para comparar resultados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     RESUMEN DEL PROYECTO
+════════════════════════════════════════════════ -->
+<section id="resumen" style="background:var(--verde-fondo)">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-file-text me-2"></i>Resumen del Proyecto</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        <div class="card-info fade-in-up">
+          <p>Las bajas temperaturas constituyen uno de los factores ambientales que afectan el crecimiento y desarrollo de las plantas. El presente trabajo tuvo como objetivo determinar el efecto del agua azucarada en la resistencia al frío de plantas de margarita.</p>
+          <p>La investigación fue de tipo <strong>experimental</strong> y se realizó durante <strong>seis semanas</strong> (desde el 9 de mayo de 2026) utilizando dos plantas previamente desarrolladas con una altura inicial de 20 cm. La planta control fue regada con agua potable, mientras que la experimental recibió una solución de agua azucarada preparada con <strong>5 g de azúcar por litro de agua</strong>.</p>
+          <p>Los resultados mostraron que ambas plantas continuaron creciendo, aunque la planta tratada con agua azucarada <strong>presentó menor cantidad de hojas dañadas</strong> y conservó por más tiempo su floración. Los resultados permitieron responder la pregunta de investigación y desarrollar competencias relacionadas con la indagación científica.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="badge text-white" style="background:#2d6a4f;font-size:0.78rem">Tipo experimental</span>
+            <span class="badge text-white" style="background:#2b5797;font-size:0.78rem">6 semanas</span>
+            <span class="badge" style="background:#ffd60a;color:#1b4332;font-size:0.78rem">Margarita</span>
+            <span class="badge text-white" style="background:#40916c;font-size:0.78rem">Cusco 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     REFERENCIAS
+════════════════════════════════════════════════ -->
+<section id="referencias">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title"><i class="bi bi-journal-bookmark me-2"></i>Referencias Bibliográficas</h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        <div class="ref-card fade-in-up">
+          <i class="bi bi-book me-2" style="color:#2d6a4f"></i>
+          <strong>Flores Quispe, M. et al. (2021).</strong> <em>Efecto de soluciones azucaradas en la resistencia al estrés hídrico y térmico en plantas ornamentales andinas.</em> Revista de Botánica Andina, 14(2), 45–58.
+        </div>
+        <div class="ref-card fade-in-up">
+          <i class="bi bi-book me-2" style="color:#2d6a4f"></i>
+          <strong>Guy, C. L. (1990).</strong> <em>Cold acclimation and freezing stress tolerance: role of protein metabolism.</em> Annual Review of Plant Physiology and Plant Molecular Biology, 41, 187–223.
+        </div>
+        <div class="ref-card fade-in-up">
+          <i class="bi bi-book me-2" style="color:#2d6a4f"></i>
+          <strong>Levitt, J. (1980).</strong> <em>Responses of plants to environmental stresses. Volume 1: Chilling, freezing and high temperature stresses.</em> Academic Press.
+        </div>
+        <div class="ref-card fade-in-up">
+          <i class="bi bi-globe me-2" style="color:#2b5797"></i>
+          <strong>SENAMHI (2026).</strong> <em>Registro de temperaturas mínimas en la región Cusco – Mayo/Junio 2026.</em> Servicio Nacional de Meteorología e Hidrología del Perú. <a href="https://www.senamhi.gob.pe" target="_blank" rel="noopener">www.senamhi.gob.pe</a>
+        </div>
+        <div class="ref-card fade-in-up">
+          <i class="bi bi-book me-2" style="color:#2d6a4f"></i>
+          <strong>Taiz, L. & Zeiger, E. (2010).</strong> <em>Plant Physiology</em> (5th ed.). Sinauer Associates.
+        </div>
+        <div class="ref-card fade-in-up">
+          <i class="bi bi-book me-2" style="color:#2d6a4f"></i>
+          <strong>Ministerio de Educación del Perú – MINEDU (2016).</strong> <em>Currículo Nacional de la Educación Básica.</em> Lima: MINEDU.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer>
+  <p>🌼 <strong>Proyecto de Indagación Científica 2026</strong></p>
+  <p>Yoshimi Roxanne Elionof Mamani Bonifacio &amp; Claudia Alejandra Limpi Usca · 2do "J"</p>
+  <p>Emblemática Gran Unidad Escolar<strong>"Clorinda Matto de Turner"</strong> · Cusco, Perú</p>
+  <p class="mt-2" style="font-size:0.75rem;opacity:0.5">Área de Ciencia y Tecnología 2026</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="script.js"></script>
+
+<!-- Timeline inline script (usa datosSemanas del script.js) -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('timeline-container');
+    if (!container || typeof datosSemanas === 'undefined') return;
+    container.innerHTML = datosSemanas.map(d => `
+      <div class="timeline-week fade-in-up">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <div class="week-num">Semana ${d.semana}</div>
+            <div class="week-date"><i class="bi bi-calendar2 me-1"></i>${d.fecha}</div>
+            <h6 class="mt-1">Control: ${d.control_altura} cm · ${d.control_hojas_danadas} hoja(s) dañada(s)</h6>
+            <p class="mb-1">${d.obs_control}</p>
+            <h6 class="mt-1" style="color:var(--verde-claro)">Experimental: ${d.exp_altura} cm · ${d.exp_hojas_danadas} hoja(s) dañada(s)</h6>
+            <p>${d.obs_exp}</p>
+          </div>
+          <div class="plant-emoji ms-3">${d.emoji}</div>
+        </div>
+      </div>
+    `).join('');
+
+    // Reinit fade-in for new elements
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    container.querySelectorAll('.fade-in-up').forEach(el => obs.observe(el));
+  });
+</script>
+
+</body>
+</html>
